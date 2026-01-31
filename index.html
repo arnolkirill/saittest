@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Авторские Настольные Лампы</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+<header>
+    <h1 class="fade-in">Авторские Настольные Лампы</h1>
+    <p class="fade-in delay-1">Продажа и изготовление уникальных ламп ручной работы</p>
+
+    <div class="cart-icon" onclick="toggleCart()">
+        🛒 <span id="cart-count">0</span>
+    </div>
+</header>
+
+<div class="catalog">
+
+    <!-- Товар 1 -->
+    <div class="product slide-up">
+        <h2>Лампа "Ракушка"</h2>
+        <img id="img1" src="rakuschka.jpg" alt="Лампа Ракушка">
+        <p class="price">Цена: 100€</p>
+
+        <button onclick="addToCart('Лампа Ракушка', 100)">Добавить в корзину</button>
+
+        </label>
+    </div>
+
+    <!-- Товар 2 -->
+    <div class="product slide-up delay-1">
+        <h2>Лампа "Ваза"</h2>
+        <img id="img2" src="koschka.jpg" alt="Лампа Ваза">
+        <p class="price">Цена: 250€</p>
+
+        <button onclick="addToCart('Лампа Ваза', 250)">Добавить в корзину</button>
+            
+    </div>
+
+</div>
+
+<!-- Корзина -->
+<div id="cart-panel" class="cart-panel">
+    <h2>Корзина</h2>
+    <ul id="cart-items"></ul>
+    <p class="total">Итого: <span id="cart-total">0</span>€</p>
+    <button class="close-btn" onclick="toggleCart()">Закрыть</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
